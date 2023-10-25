@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --green_main: #07e46e;
+
+}
+
+
+.nav{
+    width: 1200px;
+}
+
+.item_menu{
+    padding: 30px;
+    width: 900px;
+}
+
+.item_menu ul{
+    font-size: 19px;
+}
+
+.product_page{
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    color: white;
+    
+}
+
+.container_product_main{
+    display: flex;
+
+}
+
+.left_product{
+    width: 350px;
+
+}
+
+.left_product p{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--green_main);
+    user-select: none;
+}
+
+.left_product ul{
+    line-height: 30px;
+    user-select: none;
+}
+
+.left_product ul li{
+    font-weight: 500;
+    font-size: 22.5px;
+}
+
+.left_product ul:first-child{
+    margin-top: 20px;
+}
+
+.right_product{
+    width: 850px;
+}
+
+.right_product p{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--green_main);
+}
+
+#pojemnosc li, #producent li{
+    font-size: 17px;
+    
+}
+.category {
+    cursor: pointer;
+}
+
+
+.products{
+    width: 850px;
+    display: flex;
+    margin-top: 50px;
+    color: white;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
+.product{
+    width: 270px;
+    border: 1px solid var(--green_main);
+    
+}
+
+
+.pagination{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pages_number_list{
+    display: flex;
+    gap: 15px;
+}
+
+
+.products_about_container_desc{
+    width: 1200px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.tresc_container{
+    width: 1000px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.products_about_container_desc h1{
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    color: var(--green_main);
+}
+
+.description_product_about, .price_product_about{
+    padding-left: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.price_product_about{
+    color: var(--green_main);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.photo_product_about img{
+    width: 400px;
+    aspect-ratio: 1/1;
+}
+
+
+.rozrabianie_liquidu_tabela{
+    width: 1200px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--green_main);
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.rozrabianie_liquidu_tabela p{
+    text-align: center;
+    color: var(--green_main);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.podzial_tab_zwykle{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.podzial_tab_zwykle h6{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.podzial_tab_zwykle h5{
+    text-align: center;
+    font-size: 15px;
+    color: var(--green_main);
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 940px) {
+    .product_page{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .container_product_main{
+        flex-direction: column;
+    }
+
+    .left_product{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .right_product{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .right_product p{
+        text-align: center;
+    }
+
+    .products{
+        width: 100%;
+    }
+
+    .products_about_container_desc{
+        width: 100%;
+    }
+
+    .tresc_container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .photo_product_about img{
+        width: 300px;
+        aspect-ratio: 1/1;
+    }
+
+    
+
+    .products_about_container_desc h1{
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+    
+    .description_product_about, .price_product_about{
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+
+    .description_product_about{
+        margin-top: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+    }
+
+    .price_product_about{
+        margin-top: 30px;
+    }
+
+    .rozrabianie_liquidu_tabela{
+        width: 100%;
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+
+    .podzial_tab_zwykle{
+        flex-direction: column;
+    }
+
+    #tabshot_margin{
+        margin-top: 30px;
+    }
+
+}
